@@ -11,7 +11,11 @@ export const Feed = () => {
     <div>
     <h2>Other memories:</h2>
     {allMemories.map((mem) => (
-      <p>{mem}</p>	
+    <div>
+      <p>{mem.author}</p>	
+      <p>{mem.text}</p>	
+      <p>{mem.date.toLocaleDateString()}</p>
+    </div>
     ))}
     </div>
   );
